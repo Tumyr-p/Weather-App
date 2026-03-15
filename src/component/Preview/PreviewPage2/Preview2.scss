@@ -1,0 +1,16 @@
+.svgPreview2{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap:px;
+  background-color: #acd5f3;
+  border-radius: 20px;
+}
+.svgElement{
+  min-height: 40px;
+  min-width: 40px;
+}
+.preview2Text{
+  display: flex;
+  align-items: center;
+flex-direction: column;
+}

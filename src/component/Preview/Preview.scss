@@ -1,0 +1,41 @@
+.Button{
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  justify-content: space-between;
+}
+.borderrad{
+  border-radius: 15px;
+}
+.forward{
+  padding: 15px;
+  height: 70px;
+  width: 70px;
+  rotate: 45deg;
+}
+.rot135{
+  transform: rotate(-45deg );
+}
+.back{
+  padding: 15px;
+  height: 70px;
+  width: 70px;
+  rotate: 45deg;
+}
+a {
+  position: relative;
+  padding: 10px;
+  text-decoration: none;
+  color:black;
+
+ &:hover{
+   transform: scale(1.1);
+   transition: 0.2s;
+ }
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -12px;
+  }
+}
