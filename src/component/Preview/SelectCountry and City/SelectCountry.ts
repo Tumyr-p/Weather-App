@@ -1,4 +1,4 @@
-const apiKey = import.meta.env.VITE_COUNTRY_STATE_CITY_KEY;
+
 
 const ukrainianCities = [
     'Kyiv',
@@ -47,7 +47,7 @@ export async function FindCountryStates(Country) {
 
     const response = await fetch(`https://api.countrystatecity.in/v1/countries/${Country}/states`, {
         headers: {
-            'X-CSCAPI-KEY': apiKey
+            'X-CSCAPI-KEY': '3b7a9eb13690462de6a961871b5fcf088f53c08184d5f285296c4c419dbabefb'
         }
     });
     const states = await response.json();
