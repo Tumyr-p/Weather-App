@@ -1,12 +1,10 @@
 import './Weather.scss'
-import WeatherTop from "@/component/Weather/SectionWeather/Top/WeatherTop.tsx";
-import WeatherBottom from "@/component/Weather/SectionWeather/WeatherBottom.tsx";
+import WeatherTop from "@/component/Weather/SectionWeather/Weather List/WeatherTop.tsx";
 
 const Weather =() =>{
     return (
        <div>
            <WeatherTop />
-           <WeatherBottom />
        </div>
     )
 }

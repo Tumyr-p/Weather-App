@@ -1,16 +1,53 @@
-.svgPreview2{
+.preview2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.svgPreview2 {
   display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap:px;
-  background-color: #acd5f3;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
   border-radius: 20px;
+  padding: 20px;
 }
-.svgElement{
-  min-height: 40px;
-  min-width: 40px;
-}
-.preview2Text{
+
+.svgElement {
   display: flex;
   align-items: center;
-flex-direction: column;
+  justify-content: center;
+  min-height: 80px;
+  min-width: 80px;
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.preview2Text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.textDetailWeather {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a5f7a;
+  text-align: center;
+}
+
+.underBaseText {
+  font-size: 1rem;
+  color: #1a5f7a;
+  line-height: 1.6;
+  text-align: center;
 }

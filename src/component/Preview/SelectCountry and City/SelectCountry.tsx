@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 const SelectCountry = () => {
     const [inputValue, setInputValue] = useState ('')
     const [states, setState] = useState([])
-    const [city, setCity] = useState('')
+    const [, setCity] = useState('')
     const navigate = useNavigate();
     const  handeleClick = async () => {
         const states = await selectCountry(inputValue)
@@ -31,7 +31,7 @@ const SelectCountry = () => {
                 </h1>
                 <div className="inputPreview3">
                     <div className="Contry">
-                        <input type="text" required placeholder={'Select Country'} value={inputValue} onChange={(e) => setInputValue(e.target.value)}   />
+                        <input type="text" required placeholder={'Write your country'} value={inputValue} onChange={(e) => setInputValue(e.target.value)}   />
                         <button onClick={handeleClick}>FindCountry</button>
                     </div>
                     <div className="City">
@@ -45,7 +45,7 @@ const SelectCountry = () => {
                     </div>
                 </div>
             </div>
-            <button onClick={goToWeather} >Go to Weather</button>
+            <button onClick={goToWeather} className="goToWeather" >Go to Weather</button>
 
         </div>
     )

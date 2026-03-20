@@ -1,5 +1,74 @@
-.Contry{
+.selectContAndSity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.SelectCont {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a5f7a;
+}
+
+.inputPreview3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.Contry {
   display: flex;
   align-items: center;
   gap: 10px;
+
+  input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    font-size: 1rem;
+    outline: none;
+
+    &::placeholder {
+      color: #1a5f7a;
+    }
+  }
+
+  button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 12px;
+    background: #2196f3;
+    color: white;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: #1a8fc1;
+    }
+  }
+}
+
+.City {
+  select {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    color: #1a5f7a;
+  }
 }

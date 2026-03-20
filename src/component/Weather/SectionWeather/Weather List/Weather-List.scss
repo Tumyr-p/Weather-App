@@ -1,0 +1,49 @@
+.flexflex-colalign-items-centergap-10{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.flex{
+  display: flex;
+  background-color: deepskyblue;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.max-h-20max-w-20{
+  min-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  max-width: 100px;
+}
+.Text{
+  font-size: 20px;
+}
+.weatherList{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.userData{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hover:hover{
+  cursor: pointer;
+  background-color: #acd5f3;
+  border-radius: 10px;
+}
+.scrol{
+  height: 700px;
+  overflow-y: scroll;
+}

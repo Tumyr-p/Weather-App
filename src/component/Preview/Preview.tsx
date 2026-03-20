@@ -5,12 +5,10 @@ import SelectCountry from '@/component/Preview/SelectCountry and City/SelectCoun
 import Arow from '@/icon/Arow/Arow.tsx'
 import {Link} from "react-router-dom";
 import './Preview.scss'
-import { useNavigate } from 'react-router-dom';
 
 
 const Preview = () => {
     const [page, setPage] = useState<1 | 2 | 3>(1)
-    const navigate = useNavigate();
     return (
         <div>
             <div>
